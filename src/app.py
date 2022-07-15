@@ -3,12 +3,10 @@ from flask import Flask
 from random import randint
 app = Flask(__name__)
 
-content = ['learning path', 'lab', 'course', 'quiz']
-
 
 @app.route('/')
 def hello_world():
-    return 'How about trying a ' + content[randint(0, 3)] + ' next'
+    return 'The docker is running well :)'
 
 
 if __name__ == '__main__':
